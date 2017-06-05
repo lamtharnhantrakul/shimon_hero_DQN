@@ -1,0 +1,76 @@
+Model Log 03-30_14-15-35
+lr = 4e-6  Got to 27 really really fast!
+Layer (type)                     Output Shape          Param #     Connected to                     
+====================================================================================================
+main_input (InputLayer)          (None, 80, 80, 4)     0                                            
+____________________________________________________________________________________________________
+conv2d_1 (Conv2D)                (None, 20, 20, 32)    8224                                         
+____________________________________________________________________________________________________
+conv2d_2 (Conv2D)                (None, 10, 10, 64)    32832                                        
+____________________________________________________________________________________________________
+conv2d_3 (Conv2D)                (None, 10, 10, 64)    36928                                        
+____________________________________________________________________________________________________
+flatten_1 (Flatten)              (None, 6400)          0                                            
+____________________________________________________________________________________________________
+PostCNN_FC (Dense)               (None, 512)           3277312                                      
+____________________________________________________________________________________________________
+L_FC (Dense)                     (None, 256)           131328                                       
+____________________________________________________________________________________________________
+R_FC (Dense)                     (None, 256)           131328                                       
+____________________________________________________________________________________________________
+L_output (Dense)                 (None, 3)             771                                          
+____________________________________________________________________________________________________
+R_output (Dense)                 (None, 3)             771                                          
+====================================================================================================
+Total params: 3,619,494.0
+Trainable params: 3,619,494.0
+Non-trainable params: 0.0
+
+TIME      121 | MAX_SCORE   1
+TIME     4364 | MAX_SCORE   2
+TIME    11860 | MAX_SCORE   3
+TIME    17249 | MAX_SCORE   4
+TIME    17328 | MAX_SCORE   5
+TIME    25467 | MAX_SCORE   6
+TIME    40376 | MAX_SCORE   7
+TIME    72862 | MAX_SCORE   8
+TIME    79434 | MAX_SCORE   9
+TIME    82444 | MAX_SCORE  10
+TIME    93070 | MAX_SCORE  11
+TIME    93119 | MAX_SCORE  12
+TIME    93126 | MAX_SCORE  13
+TIME    93163 | MAX_SCORE  14
+TIME    93207 | MAX_SCORE  15
+TIME    95574 | MAX_SCORE  16
+TIME    95627 | MAX_SCORE  17
+TIME    95638 | MAX_SCORE  18
+TIME    95674 | MAX_SCORE  19
+TIME    95787 | MAX_SCORE  20
+TIME    95827 | MAX_SCORE  21
+TIME    95918 | MAX_SCORE  22
+TIME    95935 | MAX_SCORE  23
+TIME    95986 | MAX_SCORE  24
+TIME    96005 | MAX_SCORE  25
+TIME    96229 | MAX_SCORE  26
+TIME    96240 | MAX_SCORE  27
+
+
+Saving model at timestep: 100000
+Saving model at timestep: 110000
+Saving model at timestep: 120000
+Saving model at timestep: 130000
+Fatal Python error: (pygame parachute) Segmentation Fault
+
+Current thread 0x00007f2e8e992700 (most recent call first):
+  File "/home/zanoi/anaconda3/lib/python3.6/site-packages/tensorflow/python/framework/tensor_shape.py", line 94 in is_compatible_with
+  File "/home/zanoi/anaconda3/lib/python3.6/site-packages/tensorflow/python/framework/tensor_shape.py", line 718 in is_compatible_with
+  File "/home/zanoi/anaconda3/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 940 in _run
+  File "/home/zanoi/anaconda3/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 767 in run
+  File "/home/zanoi/anaconda3/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py", line 2075 in __call__
+  File "/home/zanoi/anaconda3/lib/python3.6/site-packages/keras/engine/training.py", line 1202 in _predict_loop
+  File "/home/zanoi/anaconda3/lib/python3.6/site-packages/keras/engine/training.py", line 1572 in predict
+  File "DQN_2A_1NNshare.py", line 244 in trainNetwork
+  File "DQN_2A_1NNshare.py", line 309 in main
+  File "DQN_2A_1NNshare.py", line 313 in <module>
+Aborted (core dumped)
+

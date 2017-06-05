@@ -1,0 +1,11 @@
+Model Log 04-16_16-38-14
+[enalty -0.002
+TIME     1025 | MAX_SCORE   1
+TIME    10632 | MAX_SCORE   2
+TIME    33658 | MAX_SCORE   3
+TIME    33709 | MAX_SCORE   4
+timestep: 50000
+timestep: 100000
+timestep: 150000
+TIME   186956 | MAX_SCORE   5
+timestep: 200000

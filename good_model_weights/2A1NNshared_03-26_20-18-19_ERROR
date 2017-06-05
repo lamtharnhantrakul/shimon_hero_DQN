@@ -1,0 +1,113 @@
+(shimon_hero2) zanoi@zanoi-XPS-8900:~/ZANOI/shimon_hero$ python DQN_2A_1NNshare.py
+Using TensorFlow backend.
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcublas.so.8.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcudnn.so.5 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcufft.so.8.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcurand.so.8.0 locally
+____________________________________________________________________________________________________
+Layer (type)                     Output Shape          Param #     Connected to                     
+====================================================================================================
+main_input (InputLayer)          (None, 80, 80, 4)     0                                            
+____________________________________________________________________________________________________
+conv2d_1 (Conv2D)                (None, 20, 20, 32)    8224                                         
+____________________________________________________________________________________________________
+conv2d_2 (Conv2D)                (None, 10, 10, 64)    32832                                        
+____________________________________________________________________________________________________
+conv2d_3 (Conv2D)                (None, 10, 10, 64)    36928                                        
+____________________________________________________________________________________________________
+flatten_1 (Flatten)              (None, 6400)          0                                            
+____________________________________________________________________________________________________
+PostCNN_FC (Dense)               (None, 512)           3277312                                      
+____________________________________________________________________________________________________
+dropout_1 (Dropout)              (None, 512)           0                                            
+____________________________________________________________________________________________________
+L_FC (Dense)                     (None, 256)           131328                                       
+____________________________________________________________________________________________________
+R_FC (Dense)                     (None, 256)           131328                                       
+____________________________________________________________________________________________________
+L_output (Dense)                 (None, 3)             771                                          
+____________________________________________________________________________________________________
+R_output (Dense)                 (None, 3)             771                                          
+====================================================================================================
+Total params: 3,619,494.0
+Trainable params: 3,619,494.0
+Non-trainable params: 0.0
+____________________________________________________________________________________________________
+None
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE3 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:910] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:885] Found device 0 with properties: 
+name: TITAN X (Pascal)
+major: 6 minor: 1 memoryClockRate (GHz) 1.531
+pciBusID 0000:01:00.0
+Total memory: 11.90GiB
+Free memory: 11.42GiB
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:906] DMA: 0 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:916] 0:   Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: TITAN X (Pascal), pci bus id: 0000:01:00.0)
+TIME     4698 | MAX_SCORE   1
+TIME     5179 | MAX_SCORE   2
+Saving model at timestep: 10000
+TIME    12651 | MAX_SCORE   3
+TIME    16966 | MAX_SCORE   4
+Saving model at timestep: 20000
+Saving model at timestep: 30000
+Saving model at timestep: 40000
+Saving model at timestep: 50000
+TIME    53184 | MAX_SCORE   5
+Saving model at timestep: 60000
+Saving model at timestep: 70000
+TIME    73277 | MAX_SCORE   6
+Saving model at timestep: 80000
+Saving model at timestep: 90000
+Saving model at timestep: 100000
+Saving model at timestep: 110000
+TIME   119393 | MAX_SCORE   7
+TIME   119445 | MAX_SCORE   8
+TIME   119462 | MAX_SCORE   9
+Saving model at timestep: 120000
+Saving model at timestep: 130000
+Saving model at timestep: 140000
+Saving model at timestep: 150000
+Saving model at timestep: 160000
+TIME   160136 | MAX_SCORE  10
+TIME   160200 | MAX_SCORE  11
+TIME   160201 | MAX_SCORE  12
+TIME   162794 | MAX_SCORE  13
+TIME   162862 | MAX_SCORE  14
+Saving model at timestep: 170000
+Saving model at timestep: 180000
+TIME   182192 | MAX_SCORE  15
+TIME   182238 | MAX_SCORE  16
+TIME   182302 | MAX_SCORE  17
+TIME   182390 | MAX_SCORE  18
+Saving model at timestep: 190000
+Saving model at timestep: 200000
+TIME   203413 | MAX_SCORE  19
+TIME   203491 | MAX_SCORE  20
+Saving model at timestep: 210000
+Saving model at timestep: 220000
+Saving model at timestep: 230000
+Saving model at timestep: 240000
+Fatal Python error: (pygame parachute) Segmentation Fault
+
+Current thread 0x00007fa71d5e5700 (most recent call first):
+  File "/home/zanoi/anaconda3/lib/python3.6/site-packages/tensorflow/python/framework/tensor_shape.py", line 436 in __init__
+  File "/home/zanoi/anaconda3/lib/python3.6/site-packages/tensorflow/python/framework/tensor_shape.py", line 800 in as_shape
+  File "/home/zanoi/anaconda3/lib/python3.6/site-packages/tensorflow/python/framework/tensor_shape.py", line 713 in is_compatible_with
+  File "/home/zanoi/anaconda3/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 940 in _run
+  File "/home/zanoi/anaconda3/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 767 in run
+  File "/home/zanoi/anaconda3/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py", line 2075 in __call__
+  File "/home/zanoi/anaconda3/lib/python3.6/site-packages/keras/engine/training.py", line 1202 in _predict_loop
+  File "/home/zanoi/anaconda3/lib/python3.6/site-packages/keras/engine/training.py", line 1572 in predict
+  File "DQN_2A_1NNshare.py", line 245 in trainNetwork
+  File "DQN_2A_1NNshare.py", line 310 in main
+  File "DQN_2A_1NNshare.py", line 314 in <module>
+Aborted (core dumped)
+

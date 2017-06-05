@@ -1,0 +1,23 @@
+Model Log 04-11_23-32-44
+penalty 0.02
+TIME     5043 | MAX_SCORE   1
+TIME     9567 | MAX_SCORE   2
+TIME     9640 | MAX_SCORE   3
+TIME    49432 | MAX_SCORE   4
+timestep: 50000
+timestep: 100000
+timestep: 150000
+timestep: 200000
+timestep: 250000
+timestep: 300000
+timestep: 350000
+timestep: 400000
+timestep: 450000
+timestep: 500000
+timestep: 550000
+timestep: 600000
+timestep: 650000
+TIME   668397 | MAX_SCORE   5
+TIME   668401 | MAX_SCORE   6
+timestep: 700000
+timestep: 750000

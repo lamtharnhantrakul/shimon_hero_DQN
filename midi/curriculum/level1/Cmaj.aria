@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seqview xscroll="0.000000" yscroll="0" zoom="100">
+<sequence maintempo="120" measureAmount="8" currentTrack="0" beatResolution="96" internalName="Untitled" fileFormatVersion="4" channelManagement="auto" metronome="false">
+
+<measure  firstMeasure="0" denom="4" num="4"/>
+
+<tempo>
+</tempo>
+<text>
+</text>
+<copyright>
+</copyright>
+<defaultkeysig keytype="2" keysymbolamount="0" />
+
+
+<track name="Untitled" id="0" channel="0" muted="false" soloed="false" volume="100" default_volume="80">
+  <key type="C" />
+  <editors height="128">
+    <score enabled="false" musical_notation="true" linear_notation="true" g_clef="true" f_clef="true" scroll="0.547945"/>
+    <keyboard enabled="true" scroll="0.605668" proportion="1.000000"/>
+    <guitar enabled="false"/>
+    <drum enabled="false" scroll="0.000000"/>
+    <controller enabled="false" controller="7"/>
+  </editors>
+  <magneticgrid divider="16" triplet="false" dotted="false"/>
+  <instrument id="0"/>
+  <drumkit id="0" collapseView="false"/>
+  <guitartuning  string0="67" string1="72" string2="76" string3="81" string4="86" string5="91"/>
+
+  <note pitch="95" start="0" end="24" volume="80"/>
+  <note pitch="71" start="192" end="216" volume="80" selected="true"/>
+  <note pitch="95" start="384" end="408" volume="80"/>
+  <note pitch="71" start="576" end="600" volume="80" selected="true"/>
+  <note pitch="95" start="768" end="792" volume="80"/>
+  <note pitch="71" start="960" end="984" volume="80" selected="true"/>
+  <note pitch="95" start="1152" end="1176" volume="80"/>
+  <note pitch="71" start="1344" end="1368" volume="80" selected="true"/>
+  <note pitch="95" start="1536" end="1560" volume="80"/>
+  <note pitch="71" start="1728" end="1752" volume="80" selected="true"/>
+  <note pitch="95" start="1920" end="1944" volume="80"/>
+  <note pitch="71" start="2112" end="2136" volume="80" selected="true"/>
+</track>
+
+</sequence></seqview>

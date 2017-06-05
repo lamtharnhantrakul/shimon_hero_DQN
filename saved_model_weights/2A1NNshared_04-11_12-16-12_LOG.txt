@@ -1,0 +1,8 @@
+Model Log 04-11_12-16-12
+lr=1.5
+-0.1 move penalty
+TIME     3940 | MAX_SCORE   1
+TIME     6887 | MAX_SCORE   2
+TIME    21112 | MAX_SCORE   3
+TIME   187435 | MAX_SCORE   4
+TIME   187437 | MAX_SCORE   5

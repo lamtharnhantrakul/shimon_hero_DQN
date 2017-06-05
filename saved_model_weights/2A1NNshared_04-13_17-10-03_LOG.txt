@@ -1,0 +1,35 @@
+Model Log 04-13_17-10-03
+-0.005 penalty
+TIME      584 | MAX_SCORE   1
+TIME    18905 | MAX_SCORE   2
+TIME    44513 | MAX_SCORE   3
+TIME    45077 | MAX_SCORE   4
+timestep: 50000
+TIME    91957 | MAX_SCORE   5
+timestep: 100000
+timestep: 150000
+timestep: 200000
+timestep: 250000
+timestep: 300000
+timestep: 350000
+timestep: 400000
+timestep: 450000
+timestep: 500000
+timestep: 550000
+timestep: 600000
+timestep: 650000
+timestep: 700000
+timestep: 750000
+timestep: 800000
+timestep: 850000
+timestep: 900000
+timestep: 950000
+timestep: 1000000
+timestep: 1050000
+timestep: 1100000
+timestep: 1150000
+timestep: 1200000
+timestep: 1250000
+timestep: 1300000
+timestep: 1350000
+timestep: 1400000
