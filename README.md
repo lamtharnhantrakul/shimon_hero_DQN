@@ -58,7 +58,7 @@ The Network is yet unable to generalize and coordinate 4 arms. Some local optimu
 ![Alt text](assets/local_minimum_2.gif?raw=true "Title")
 
 ## Q-learning 
-For a detailed treatment on DQN and Deep Reinforcement Learning, refer to the [original DeepMind Atari DQN Paper](https://deepmind.com/research/publications/playing-atari-deep-reinforcement-learning/). The DQN model in this work is based on very well documented and explained blogs by [Ben Lau] (https://yanpanlau.github.io/2016/07/10/FlappyBird-Keras.html) and [Yen Chen Lin] (https://github.com/yenchenlin/DeepLearningFlappyBird).
+For a detailed treatment on DQN and Deep Reinforcement Learning, refer to the [original DeepMind Atari DQN Paper](https://deepmind.com/research/publications/playing-atari-deep-reinforcement-learning/). The DQN model in this work is based on very well documented and explained blogs by [Ben Lau](https://yanpanlau.github.io/2016/07/10/FlappyBird-Keras.html) and [Yen Chen Lin](https://github.com/yenchenlin/DeepLearningFlappyBird.html).
 
 ## Video
 Check out the demo video here!
