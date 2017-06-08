@@ -38,7 +38,7 @@ The architecture achieving better-than-human results in bi-manual control is the
 
 Interestingly, I finished reading a book on synthetic neurobiology "Vehicles" by Valentino Braitenberg. The author uses simple fictional vehicles to motivate the design of how animal sensory percepts and crossed connections between visual, audio and motor cortexes came to be.
 
-<img src="assets/synthetic_biology.jpg" width="300" height="370" />
+<img src="assets/synthetic_biology.jpg" width="300" height="330" />
 
 The branching into left and right hemispheres mirrors the architecture we arrived in our experiments. We are currently exploring models
 
@@ -50,11 +50,12 @@ The branching into left and right hemispheres mirrors the architecture we arrive
 <img src="assets/table_results.png" width="500" height="130" />
 
 ## 4-arm control and coordination
-The Network is yet unable to generalize and coordinate 4 arms. Some local optimums include:
-"Grouping the arms together to form 2 arms" <br>
+The Network is yet unable to generalize and coordinate 4 arms. Some local optimums include:<br>
+
+<i>"Grouping the arms together to form 2 arms"</i> <br>
 ![Alt text](assets/local_minimum_1.gif?raw=true "Title")
 
-"Grouping all arms together to form one large arm" <br>
+<i>"Grouping all arms together to form one large arm"</i> <br>
 ![Alt text](assets/local_minimum_2.gif?raw=true "Title")
 
 ## Q-learning 
@@ -62,7 +63,7 @@ For a detailed treatment on DQN and Deep Reinforcement Learning, refer to the [o
 
 ## Video
 Check out the demo video here!
-[![Video link](assets/youtube.gif)](https://www.youtube.com/watch?v=eQkC8CA4npI)
+[![Video link](https://github.com/lamtharnhantrakul/shimon_hero_DQN/blob/master/assets/youtube.png)](https://www.youtube.com/watch?v=eQkC8CA4npI)
 
 ## Work in Progress
 * Continue to explore biologically inspired architectures in terms of visual and motor cortexes. 
@@ -83,7 +84,8 @@ The main dependancies are:
 ## Usage
 To train a model: 
 ```
-cd DQN_models/2arms_1NN_shared/ 
+cd DQN_models
+cd 2arms_1NN_shared
 python DQN_2A_1NNshare.py
 ```
 To watch a model play the game
