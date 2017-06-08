@@ -22,7 +22,7 @@ The only signals available to the DQN agent are:
 
 All behavior learned by the agent, including coordination of arms not to hit one another and catch notes on opposite ends of the screen, is learned through a Deep Q Network trained overnight on an NVidia Titan X Pascal GPU. 
 
-<img src="assets/raw_pixel_diagram.png" width="200" height="200" />
+<img src="assets/raw_pixel_diagram.png" width="500" height="324" />
 
 ## Architecture - Bimanual DQN
 To account for all possible combination of notes and spatial relations of arms to each note, a CNN architecture fits very well for the task at hand. Our contribution lies in the investigation of "bi-manual control" and generalizations to n-manual control. Deep Reinforcement Learning has shown great promise in the field of robotics, however most of the implementations are limited tp "mono-manual" i.e a single robotic arm opening a door [], a single robotic arm stacking boxes [], a single robotic arm grabbing objects []. Bi-manual control requires coordination of dynamic and joined degrees of freedom.
@@ -34,11 +34,11 @@ We experimented with different architectures including:
 
 The architecture achieving better-than-human results in bi-manual control is the following architecture. We branch out 2 separate FC layers for each arm. We reason that the shared activations from the CNN is useful for both left and right arms, but each arm must learn to interpret the signals in a separate manner. 
 
-![Alt text](assets/bi_manual_architecture.png?raw=true "Title")
+<img src="assets/bi_manual_architecture.png" width="500" height="324" />
 
 Interestingly, I finished reading a book on synthetic neurobiology "Vehicles" by Valentino Braitenberg. The author uses simple fictional vehicles to motivate the design of how animal sensory percepts and crossed connections between visual, audio and motor cortexes came to be.
 
-![Alt text](assets/synthetic_biology.jpg?raw=true "Title")
+<img src="assets/synthetic_biology.jpg" width="500" height="324" />
 
 The branching into left and right hemispheres mirrors the architecture we arrived in our experiments. We are currently exploring models
 
@@ -47,14 +47,14 @@ The branching into left and right hemispheres mirrors the architecture we arrive
 
 ![Alt text](assets/Q_value_graph.png?raw=true "Title")
 
-![Alt text](assets/table_results.png?raw=true "Title")
+<img src="assets/table_results.png" width="500" height="324" />
 
 ## 4-arm control and coordination
 The Network is yet unable to generalize and coordinate 4 arms. Some local optimums include:
-"Grouping the arms together to form 2 arms"
+# "Grouping the arms together to form 2 arms"
 ![Alt text](assets/local_minimum_1.gif?raw=true "Title")
 
-"Grouping all arms together to form one large arm"
+# "Grouping all arms together to form one large arm"
 ![Alt text](assets/local_minimum_2.gif?raw=true "Title")
 
 ## Q-learning 
