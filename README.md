@@ -22,7 +22,7 @@ The only signals available to the DQN agent are:
 
 All behavior learned by the agent, including coordination of arms not to hit one another and catch notes on opposite ends of the screen, is learned through a Deep Q Network trained overnight on an NVidia Titan X Pascal GPU. 
 
-![Alt text](assets/raw_pixel_diagram.png?raw=true "Title")
+<img src="assets/raw_pixel_diagram.png" width="200" height="200" />
 
 ## Architecture - Bimanual DQN
 To account for all possible combination of notes and spatial relations of arms to each note, a CNN architecture fits very well for the task at hand. Our contribution lies in the investigation of "bi-manual control" and generalizations to n-manual control. Deep Reinforcement Learning has shown great promise in the field of robotics, however most of the implementations are limited tp "mono-manual" i.e a single robotic arm opening a door [], a single robotic arm stacking boxes [], a single robotic arm grabbing objects []. Bi-manual control requires coordination of dynamic and joined degrees of freedom.
