@@ -38,7 +38,7 @@ The architecture achieving better-than-human results in bi-manual control is the
 
 Interestingly, I finished reading a book on synthetic neurobiology "Vehicles" by Valentino Braitenberg. The author uses simple fictional vehicles to motivate the design of how animal sensory percepts and crossed connections between visual, audio and motor cortexes came to be.
 
-<img src="assets/synthetic_biology.jpg" width="300" height="420" />
+<img src="assets/synthetic_biology.jpg" width="300" height="370" />
 
 The branching into left and right hemispheres mirrors the architecture we arrived in our experiments. We are currently exploring models
 
@@ -51,14 +51,18 @@ The branching into left and right hemispheres mirrors the architecture we arrive
 
 ## 4-arm control and coordination
 The Network is yet unable to generalize and coordinate 4 arms. Some local optimums include:
-"Grouping the arms together to form 2 arms"\s\s
+"Grouping the arms together to form 2 arms" <br>
 ![Alt text](assets/local_minimum_1.gif?raw=true "Title")
 
-"Grouping all arms together to form one large arm"\s\s
+"Grouping all arms together to form one large arm" <br>
 ![Alt text](assets/local_minimum_2.gif?raw=true "Title")
 
 ## Q-learning 
 For a detailed treatment on DQN and Deep Reinforcement Learning, refer to the [original DeepMind Atari DQN Paper](https://deepmind.com/research/publications/playing-atari-deep-reinforcement-learning/). The DQN model in this work is based on very well documented and explained blogs by [Ben Lau] (https://yanpanlau.github.io/2016/07/10/FlappyBird-Keras.html) and [Yen Chen Lin] (https://github.com/yenchenlin/DeepLearningFlappyBird).
+
+## Video
+Check out the demo video here!
+[![Video link](assets/youtube.gif)](https://www.youtube.com/watch?v=eQkC8CA4npI)
 
 ## Work in Progress
 * Continue to explore biologically inspired architectures in terms of visual and motor cortexes. 
@@ -75,6 +79,18 @@ The main dependancies are:
 * Keras 2.0.2
 * Tensorflow 1.0.1
 * Pygame 1.9.3
+
+## Usage
+To train a model: 
+```
+cd DQN_models/2arms_1NN_shared/ 
+python DQN_2A_1NNshare.py
+```
+To watch a model play the game
+```
+cd DQN_models/2arms_1NN_shared/ 
+python DQN_2A_1NNshare_play.py
+```
 
 ## Credits
 * Deep Reinforcement Learning: Lamtharn (Hanoi) Hantrakul
