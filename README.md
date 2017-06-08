@@ -34,11 +34,11 @@ We experimented with different architectures including:
 
 The architecture achieving better-than-human results in bi-manual control is the following architecture. We branch out 2 separate FC layers for each arm. We reason that the shared activations from the CNN is useful for both left and right arms, but each arm must learn to interpret the signals in a separate manner. 
 
-<img src="assets/bi_manual_architecture.png" width="500" height="700" />
+<img src="assets/bi_manual_architecture.png" width="300" height="420" />
 
 Interestingly, I finished reading a book on synthetic neurobiology "Vehicles" by Valentino Braitenberg. The author uses simple fictional vehicles to motivate the design of how animal sensory percepts and crossed connections between visual, audio and motor cortexes came to be.
 
-<img src="assets/synthetic_biology.jpg" width="500" height="600" />
+<img src="assets/synthetic_biology.jpg" width="300" height="420" />
 
 The branching into left and right hemispheres mirrors the architecture we arrived in our experiments. We are currently exploring models
 
@@ -47,7 +47,7 @@ The branching into left and right hemispheres mirrors the architecture we arrive
 
 ![Alt text](assets/Q_value_graph.png?raw=true "Title")
 
-<img src="assets/table_results.png" width="300" height="130" />
+<img src="assets/table_results.png" width="500" height="130" />
 
 ## 4-arm control and coordination
 The Network is yet unable to generalize and coordinate 4 arms. Some local optimums include:
