@@ -25,7 +25,7 @@ All behavior learned by the agent, including coordination of arms not to hit one
 <img src="assets/raw_pixel_diagram.png" width="500" height="324" />
 
 ## Architecture - Bimanual DQN
-To account for all possible combination of notes and spatial relations of arms to each note, a CNN architecture fits very well for the task at hand. Our contribution lies in the investigation of "bi-manual control" and generalizations to n-manual control. Deep Reinforcement Learning has shown great promise in the field of robotics, however most of the implementations are limited tp "mono-manual" i.e a single robotic arm opening a door [], a single robotic arm stacking boxes [], a single robotic arm grabbing objects []. Bi-manual control requires coordination of dynamic and joined degrees of freedom.
+To account for all possible combination of notes and spatial relations of arms to each note, a CNN architecture fits very well for the task at hand. Our contribution lies in the investigation of "bi-manual control" and generalizations to n-manual control. Deep Reinforcement Learning has shown great promise in the field of robotics, however most of the implementations are limited to "mono-manual" i.e a a single robotic arm stacking boxes [1](https://blog.openai.com/robots-that-learn/) or a collection of individual single robotic arm grabbing objects [2](https://research.googleblog.com/2016/03/deep-learning-for-robots-learning-from.html). Bi-manual control requires coordination of dynamic and joined degrees of freedom.
 
 We experimented with different architectures including:
 * A DQN that outputs Q-values for all possible combinations of arm movements e.g 3 arms (27 combos: LLL, RLL, RRL, RRR etc...)
