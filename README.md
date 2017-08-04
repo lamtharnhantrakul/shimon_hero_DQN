@@ -1,4 +1,4 @@
-# Deep Q Networks for learned Bi-Manual and n-Manual robot control and coordination
+# Deep Q Networks for learned Bi-Manual and Tetra-Manual robot control and coordination
 ![Alt text](assets/trained_bi_manual.gif?raw=true "Title")
 
 ## Overview
